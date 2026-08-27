@@ -14,10 +14,10 @@ Sync_List=(
 	CustomFiles/Patches/*
 	CustomFiles/Kconfig/*
 	# Scripts/AutoBuild_DiyScript.sh
-	Scripts/Sync.sh
+	# Scripts/Sync.sh
 	Scripts/AutoBuild_Function.sh
 	LICENSE
-	README.md
+	# README.md
 )
 
 set -e

@@ -1,5 +1,7 @@
 # OpenWrt-Actions & One-key AutoUpdate
 
+> 本项目基于 [Hyy2001X/AutoBuild-Actions-BETA](https://github.com/Hyy2001X/AutoBuild-Actions-BETA) 定制，仅维护 **新路由3 (Newifi D2)** 一个设备。每月 1 号自动同步上游核心，每三个月（1/4/7/10 月 1 号）自动编译一次。
+
 AutoBuild-Actions 稳定版仓库地址: [AutoBuild-Actions-Template](https://github.com/Hyy2001X/AutoBuild-Actions-Template)
 
 自用修改版软件包地址: [AutoBuild-Packages](https://github.com/Hyy2001X/AutoBuild-Packages)
@@ -10,15 +12,7 @@ AutoBuild-Actions 稳定版仓库地址: [AutoBuild-Actions-Template](https://gi
 
 | 维护 | 型号 | 配置文件 (TARGET_PROFILE) | 源 | 备注 |
 | :----: | :----: | :----: | :----: | :----: |
-| ✅ | [x86_64](./.github/workflows/AutoBuild-x86_64.yml) | [x86_64](./Configs/x86_64) | [immortalwrt](https://github.com/immortalwrt/immortalwrt) |  |
-| ❎ | [新路由3](./.github/workflows/AutoBuild-d-team_newifi-d2.yml) | [d-team_newifi-d2](./Configs/d-team_newifi-d2) | [lede](https://github.com/coolsnowwolf/lede) |  |
-| ❎ | [华硕 ACRH17](./.github/workflows/AutoBuild-asus_rt-ac42u.yml) | [asus_rt-ac42u](./Configs/asus_rt-ac42u) | [lede](https://github.com/coolsnowwolf/lede) |  |
-| ❎ | [竞斗云 2.0](./.github/workflows/AutoBuild-p2w_r619ac-128m.yml) | [p2w_r619ac-128m](./Configs/p2w_r619ac-128m) | [lede](https://github.com/coolsnowwolf/lede) |  |
-| ❎ | [小娱C5](./.github/workflows/AutoBuild-xiaoyu_xy-c5.yml) | [xiaoyu_xy-c5](./Configs/xiaoyu_xy-c5) | [lede](https://github.com/coolsnowwolf/lede) |  |
-| ❎ | [红米 AC2100](./.github/workflows/AutoBuild-xiaomi_redmi-router-ac2100.yml) | [xiaomi_redmi-router-ac2100](./Configs/xiaomi_redmi-router-ac2100) | [lede](https://github.com/coolsnowwolf/lede) |  |
-| ❎ | [红米 AX6S](./.github/workflows/AutoBuild-xiaomi_redmi-router-ax6s.yml) | [xiaomi_redmi-router-ax6s](./Configs/xiaomi_redmi-router-ax6s) | [lede](https://github.com/coolsnowwolf/lede) |  |
-| ✅ | [中国移动 RAX3000M](./.github/workflows/AutoBuild-cmcc_rax3000m.yml) | [cmcc_rax3000m](./Configs/cmcc_rax3000m) | [immortalwrt-mt798x](https://github.com/hanwckf/immortalwrt-mt798x) |  |
-| ✅ | [捷希 Q30](./.github/workflows/AutoBuild-jcg_q30.yml) | [jcg_q30](./Configs/jcg_q30) | [immortalwrt-mt798x](https://github.com/hanwckf/immortalwrt-mt798x) |  |
+| ✅ | [新路由3](./.github/workflows/AutoBuild-d-team_newifi-d2.yml) | [d-team_newifi-d2](./Configs/d-team_newifi-d2) | [lede](https://github.com/coolsnowwolf/lede) |  |
 
 🔔 **为了你的账号安全, 请不要使用 SSH 连接 Github Actions**, `.config` 配置以及固件定制等操作请务必在本地完成 🔔
 

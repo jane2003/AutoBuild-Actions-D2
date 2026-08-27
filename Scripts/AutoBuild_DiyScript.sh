@@ -24,7 +24,7 @@ Firmware_Diy_Core() {
 	Default_IP="192.168.1.1"
 	# 固件 IP 地址
 	
-	Default_Title="Powered by AutoBuild-Actions"
+	Default_Title="NEWIFI D2 | jane2003"
 	# 固件终端首页显示的额外信息
 	
 	Short_Fw_Date=true
@@ -97,7 +97,6 @@ EOF
 		# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 		# sed -i '/uci commit luci/i\uci set luci.main.mediaurlbase="/luci-static/argon-mod"' $(PKG_Finder d package default-settings)/files/zzz-default-settings
 		#sed -i "s?openwrt-23.05?master?g" ${FEEDS_CONF}
-		git reset --hard 1627fd2c745e496134834a8fb8145ba0aa458ae9
 		
 		rm -r ${FEEDS_LUCI}/luci-theme-argon*
 		AddPackage other vernesong OpenClash dev

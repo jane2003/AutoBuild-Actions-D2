@@ -14,6 +14,9 @@ on:
       sync_mode:
         description: '同步上游所有内容'
         default: 'false'
+  ## 每月 1 号 0 点 UTC 自动同步上游核心
+  schedule:
+    - cron: 0 0 1 * *
 
 env:
   SCRIPT_FILE: Scripts/Sync.sh
