@@ -14,6 +14,16 @@ AutoBuild-Actions 稳定版仓库地址: [AutoBuild-Actions-Template](https://gi
 | :----: | :----: | :----: | :----: | :----: |
 | ✅ | [新路由3](./.github/workflows/AutoBuild-d-team_newifi-d2.yml) | [d-team_newifi-d2](./Configs/d-team_newifi-d2) | [lede](https://github.com/coolsnowwolf/lede) |  |
 
+## 刷机后默认信息
+
+| 项目 | 值 |
+| :----: | :----: |
+| 默认 IP | `192.168.1.1` |
+| 用户名 | `root` |
+| 密码 | `password` |
+
+刷入固件后，电脑网线接路由 LAN 口（或手动设静态 IP `192.168.1.x`），浏览器打开 `http://192.168.1.1` 进 LuCI，SSH 同地址。首次登录后建议立即改密码。
+
 🔔 **为了你的账号安全, 请不要使用 SSH 连接 Github Actions**, `.config` 配置以及固件定制等操作请务必在本地完成 🔔
 
 🎈 **提示**: 文档中的 **TARGET_PROFILE** 为编译的设备名称(代号), 例如: `d-team_newifi-d2`、`asus_rt-acrh17`、`x86_64`
