@@ -116,6 +116,7 @@ EOF
 		case "${TARGET_BOARD}" in
 		ramips)
 			sed -i "/DEVICE_COMPAT_VERSION := 1.1/d" target/linux/ramips/image/mt7621.mk
+			rm -f target/linux/ramips/patches-5.10/810-uvc-add-iPassion-iP2970-support.patch
 			Copy ${CustomFiles}/Depends/automount $(PKG_Finder d "package" automount)/files 15-automount
 		;;
 		esac

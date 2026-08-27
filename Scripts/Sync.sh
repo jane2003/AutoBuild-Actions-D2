@@ -15,7 +15,7 @@ Sync_List=(
 	CustomFiles/Kconfig/*
 	# Scripts/AutoBuild_DiyScript.sh
 	# Scripts/Sync.sh
-	# Scripts/AutoBuild_Function.sh
+	Scripts/AutoBuild_Function.sh
 	LICENSE
 	# README.md
 )
@@ -65,6 +65,11 @@ else
 	done
 	sleep 3
 	cd ${LOCAL_REPO_DIR}
+	# 重新应用本地修复, 防止被上游同步覆盖
+	if ! grep -q "zzz_Default_Version=.*awk 'NR==1'" Scripts/AutoBuild_Function.sh;then
+		echo "Reapply local patch: version awk NR==1"
+		sed -i '/zzz_Default_Version="/ s#\${Version_File})"#\${Version_File} | awk '"'"'NR==1'"'"')"#' Scripts/AutoBuild_Function.sh
+	fi
 	git config --global user.name ${GITHUB_ACTOR}
 	# git remote add origin ${LOCAL_REPO}
 	git add *
