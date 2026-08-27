@@ -15,7 +15,7 @@ Sync_List=(
 	CustomFiles/Kconfig/*
 	# Scripts/AutoBuild_DiyScript.sh
 	# Scripts/Sync.sh
-	Scripts/AutoBuild_Function.sh
+	# Scripts/AutoBuild_Function.sh
 	LICENSE
 	# README.md
 )
